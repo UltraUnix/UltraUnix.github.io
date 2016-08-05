@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -30,7 +30,7 @@
   div.tooltip {
     position: absolute;
     text-align: left;
-    max-width: 200px;
+    max-width: 280px;
     height: auto;
     padding: 2px;
     font: 12px sans-serif;
@@ -64,13 +64,13 @@
 var treeData = [
   {
     "name": "Staatsbegriff",
-    "def": "<strong>Erklärung: </strong>Der Staat als Institution beinhaltet klassische und moderne Ordnungskriterien.",
+    "def": "<strong>Definition: </strong>Der Staat als Institution beinhaltet klassische und moderne Ordnungskriterien.",
     "parent": "null",
     "children": [
       {
         "name": "Klassisch",
         "parent": "Staatsbegriff",
-        "def": "<strong>Erklärung: </strong>Der klassische Staatsbegriff definiert sich über Merkmale, auf deren Grundlage sich Staaten voneinander und von anderen gesellschaftlichen Einrichtungen unterscheiden lassen (äußere Form).",
+        "def": "<strong>Definition: </strong>Der klassische Staatsbegriff (Georg Jellinek) definiert sich über Merkmale, auf deren Grundlage sich Staaten voneinander und von anderen gesellschaftlichen Einrichtungen unterscheiden lassen (äußere Form).",
         "children": [
           {
             "name": "Staatsgebiet",
@@ -85,12 +85,12 @@ var treeData = [
                 {
                   "name": "Innere Anerkennung",
                   "parent": "Staatsgrenzen",
-                  "def": "<strong>Erklärung: </strong>Staatsgrenzen müssen, um als legitim zu gelten, durch das Volk anerkannt werden."
+                  "def": "<strong>Definition: </strong>Staatsgrenzen müssen, um als legitim zu gelten, durch das Volk anerkannt werden."
                  },
                  {
                   "name": "Äußere Anerkennung",
                   "parent": "Staatsgrenzen",
-                  "def": "<strong>Erklärung: </strong>Anerkennung der Staatsgrenzen durch andere Staaten."
+                  "def": "<strong>Definition: </strong>Anerkennung der Staatsgrenzen durch andere Staaten."
                  }
                  ]
                  },
@@ -100,14 +100,14 @@ var treeData = [
               "def": "<strong>Definition: </strong>Die staatliche Gebietshoheit kann zentral ausgeübt oder territorial gegliedert sein.",
               "children": [
                 {
-                  "name": "Föderalstaaten",
+                  "name": "Bundesstaat",
                   "parent": "Staatliche Gebietshoheit",
-                  "def": "<strong>Beispiel: </strong>Deutschland."
+                  "def": "<strong>Definition: </strong>Die Herrschaftsgewalt wird zwischen den Gliedstaaten und der Bundesebene aufgeteilt."
                  },
                  {
-                  "name": "Einheitsstaaten",
+                  "name": "Einheitsstaat",
                   "parent": "Staatliche Gebietshoheit",
-                  "def": "<strong>Beispiel: </strong>Frankreich."
+                  "def": "<strong>Definition: </strong>Die Herrschaftsgewalt über das gesamte Staatsgebiet wird zentralistisch ausgeübt."
                  }
                  ]
                  }
@@ -116,12 +116,12 @@ var treeData = [
           {
             "name": "Staatsvolk",
             "parent": "Klassisch",
-            "def": "<strong>Definition: </strong>Das Staatsvolk ist ein Zusammenschluss von Mitgliedern einer Gesellschaft, die einen Staat bilden und sich damit von anderen Völkern unterscheiden."
+            "def": "<strong>Definition: </strong>Das Staatsvolk ist ein Zusammenschluss von Mitgliedern eines Gemeinwesens, über die der Staat Herrschaftsgewalt ausübt."
           },
           {
             "name": "Staatsgewalt",
             "parent": "Klassisch",
-            "def": "<strong>Definition: </strong>Was den Staat von anderen gesellschaftlichen Einrichtungen unterscheidet, sind die ihm zugewiesenen Funktionen und die spezifischen Kompetenzen, die erforderlich sind, um diese Funktionen zu erfüllen.",
+            "def": "<strong>Definition: </strong>Was den Staat von anderen gesellschaftlichen Einrichtungen unterscheidet, sind die ihm zugewiesenen Funktionen und die spezifischen Kompetenzen, die erforderlich sind, um diese Funktionen zu erfüllen, insbesondere das legitime Monopol auf Ausübung physischen Zwangs (Gewaltmonopol).",
             "children": [
             {
               "name": "Staatsfunktionen",
@@ -131,22 +131,22 @@ var treeData = [
                 {
                   "name": "Schutzfunktion",
                   "parent": "Staatsfunktionen",
-                  "def": "<strong>Beispiel: </strong>Schutz nach außen, Friedenssicherung nach innen und Sicherung der natürlichen Lebensgrundlage."
+                  "def": "<strong>Definition: </strong>Schutz nach außen, Friedenssicherung nach innen und Sicherung der natürlichen Lebensgrundlage."
                  },
                  {
                   "name": "Ökonomische Funktion",
                   "parent": "Staatsfunktionen",
-                  "def": "<strong>Beispiel: </strong>Eigentumsordnung, Geldwesen und Marktordnung."
+                  "def": "<strong>Definition: </strong>Eigentumsordnung, Geldwesen und Marktordnung."
                  },
                  {
                   "name": "Soziale Funktion",
                   "parent": "Staatsfunktionen",
-                  "def": "<strong>Beispiel: </strong>Gewährleistung sozialer Rechte und soziale Gerechtigkeit."
+                  "def": "<strong>Definition: </strong>Gewährleistung sozialer Rechte und soziale Gerechtigkeit."
                  },
                  {
                   "name": "Kulturelle Funktion",
                   "parent": "Staatsfunktionen",
-                  "def": "<strong>Beispiel: </strong>Sicherstellung allgemeiner Bildung für alle Bürger und Förderung der Grundlagenforschung."
+                  "def": "<strong>Definition: </strong>Sicherstellung allgemeiner Bildung für alle Bürger und Förderung der Grundlagenforschung."
                  }
                ]
             },
@@ -179,54 +179,54 @@ var treeData = [
       {
         "name": "Modern",
         "parent": "Staatsbegriff",
-        "def": "<strong>Erklärung: </strong>Der moderne Staatsbegriff definiert sich über Merkmale der inneren Struktur des Staates (innere Form).",
+        "def": "<strong>Definition: </strong>Der moderne Staatsbegriff definiert sich über die  Trias des klassischen Staatsbegriffs (Staatsgebiet, Staatsvolk, Staatsgewalt) und zusätzlich über Merkmale der inneren Struktur des Staates (innere Form).",
         "children": [
           {
             "name": "Verfassung",
             "parent": "Modern",
-            "def": "<strong>Definition: </strong>Die Verfassung beinhaltet die Regeln, welche die Art und Weise der Institutionalisierung staatlicher Herrschaft bestimmen."
+            "def": "<strong>Definition: </strong>Die Verfassung legt Regeln der Staatsorganisation und des Zusammenlebens in einem Gemeinwesen fest, definiert Grenzen der Herrschaftsausübung, normiert die Rechte und Pflichten staatlicher Herrschaftsinstanzen sowie der Mitglieder des Gemeinwesens."
           },
           {
             "name": "Demokratie",
             "parent": "Modern",
-            "def": "<strong>Definition: </strong>Demokratie bezeichnet im Allgemeinen die Herrschaft durch das Volk.",
+            "def": "<strong>Definition: </strong>Sehr allgemein die Herrschaft oder Regierung des Volkes.",
             "children": [
                 {
                   "name": "Repräsentation",
                   "parent": "Modern",
-                  "def": "<strong>Erklärung: </strong>Machtübertragung von den Bürgern auf die Repräsentanten und Abhängigkeit der Repräsentanten vom Vertrauen der Bürger."
+                  "def": "<strong>Definition: </strong>Zeitlich begrenzte Machtübertragung auf gewählte Vertreter (Abgeordnete), insbesondere des Rechts, allgemein verbindliche Entscheidungen zu treffen."
                  },
                  {
                   "name": "Gewaltenteilung",
                   "parent": "Modern",
-                  "def": "<strong>Erklärung: </strong>Gewaltenteilung dient der Begrenzung staatlichen Machtmissbrauchs.",
+                  "def": "<strong>Definition: </strong>Aufteilung der Staatsgewalt auf unterschiedliche Institutionen und Herrschaftsorgane.",
                   "children": [
                     {
                       "name": "Herrschaft auf Zeit",
                       "parent": "Gewaltenteilung",
-                      "def": "<strong>Erklärung: </strong>Die Gesetzgebungs- und Regierungsgewalt wird nur für eine bestimmte Zeit auf die Repräsentanten übertragen."
+                      "def": "<strong>Definition: </strong>Die Gesetzgebungs- und Regierungsgewalt wird nur für eine bestimmte Zeit auf die Repräsentanten übertragen."
                      },
                      {
                       "name": "Horizontale Gewaltenteilung",
                       "parent": "Gewaltenteilung",
-                      "def": "<strong>Erklärung: </strong>Staatliche Kompetenzen werden auf verschiedene Institutionen übertragen."
+                      "def": "<strong>Definition: </strong>Staatliche Kompetenzen werden auf verschiedene Institutionen übertragen."
                      },
                      {
                       "name": "Vertikale Gewaltenteilung",
                       "parent": "Gewaltenteilung",
-                      "def": "<strong>Erklärung: </strong>In föderalen Staaten: Aufteilung staatlicher Gewalt auf Bundes- und Gliedstaaten."
+                      "def": "<strong>Definition: </strong>In föderalen Staaten: Aufteilung staatlicher Gewalt auf Bundes- und Gliedstaaten."
                      },
                      {
                       "name": "Rechtsstaatsprinzip",
                       "parent": "Gewaltenteilung",
-                      "def": "<strong>Erklärung: </strong>Rechtliche Begrenzung staatlicher Machtbefugnisse gegenüber der Gesellschaft."
+                      "def": "<strong>Definition: </strong>Rechtliche Begrenzung staatlicher Machtbefugnisse gegenüber der Gesellschaft."
                      }
                      ]
                  },
                  {
                   "name": "Partizipation",
                   "parent": "Modern",
-                  "def": "<strong>Erklärung: </strong>Jede Form von Demokratie setzt Strukturen der Interessenvermittlung zwischen Regierten und Regierenden voraus, die es ermöglichen, dass Bürger an der politischen Willensbildung beteiligt werden."
+                  "def": "<strong>Definition: </strong>Beteiligung der Bürger an der politischen Willensbildung und politischen Entscheidungsfindung."
                  }
                  ]
           },
